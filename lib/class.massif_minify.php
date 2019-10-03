@@ -357,6 +357,7 @@ class massif_minify {
 			$scss->setFormatter($formatter);
 			*/
 			$compiler = new Compiler();
+		    	$compiler->setVariables($vars);
 			$compiler->setFormatter($formatter);
 			$compiler->addImportPath($path['dirname']);
 			
